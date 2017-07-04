@@ -3,6 +3,23 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /* Full height image header */
+
+.html {
+   width: 100% !important ;
+   height: 100%;
+   margin: 0px !important;
+   padding: 0px !important;
+   overflow-x: hidden;
+}
+
+.body {
+   width: 100% !important;
+   height: 100%;
+   margin: 0px !important;
+   padding: 0px !important;
+   overflow-x: hidden;
+}
+
 .quarter {
   float:left;
   width: 100%
@@ -64,10 +81,6 @@
 /* ============================= */
 /* ============================= */
 
-body {
-  background-color: #fce9fc;
-}
-
 .rectangle1 {
     width:100%;
     height:690px;
@@ -108,16 +121,21 @@ body {
 }
 
 .margin-bottom {
-  margin-bottom:16px;
+  margin-bottom: 16px;
 }
 
 /* Cover Image */
 .coverpage {
   background-image: url("/banner.jpg");
+  repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  background-size: cover;
-  height: 620px
+  max-width: 100%;
+  height: 620px;
 }
 
 .col {
