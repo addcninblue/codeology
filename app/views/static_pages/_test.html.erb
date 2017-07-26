@@ -13,7 +13,7 @@
 }
 
 </style>
-<svg width="960" height="600"></svg>
+<svg width="1200" height="600"></svg>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
 
@@ -24,7 +24,7 @@ var svg = d3.select("svg"),
 var color = d3.scaleOrdinal(d3.schemeCategory20);
 
 var simulation = d3.forceSimulation()
-    .force("link", d3.forceLink().id(function(d) { return d.id; }))
+    .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(400))
     .force("charge", d3.forceManyBody())
     .force("center", d3.forceCenter(width / 2, height / 2));
 
@@ -43,7 +43,7 @@ d3.json("/test.json", function(error, graph) {
     .selectAll("circle")
     .data(graph.nodes)
     .enter().append("circle")
-      .attr("r", 5)
+      .attr("r", 20)
       .attr("fill", function(d) { return color(d.group); })
       .call(d3.drag()
           .on("start", dragstarted)
