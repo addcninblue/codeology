@@ -12,6 +12,5 @@ Rails.application.routes.draw do
   delete '/logout',  to: 'sessions#destroy'
 
   get '/test', to: "static_pages#test"
-
-  resources :users
+  resources :users, :except => [:new]
 end
