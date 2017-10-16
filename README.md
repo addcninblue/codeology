@@ -30,3 +30,7 @@ bundle install
 ```
 
 If you have trouble installing libv8 on El Capitan, see [here](http://stackoverflow.com/questions/19577759/installing-libv8-gem-on-os-x-10-9).
+
+## Design Documents
+
+* [Hao: Interview Matching System](doc/interviewMatchingSystem.md)
