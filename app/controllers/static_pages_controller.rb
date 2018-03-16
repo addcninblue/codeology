@@ -3,9 +3,6 @@ class StaticPagesController < ApplicationController
     render layout: 'application_fluid'
   end
 
-  # def calendar
-  # end
-
   def recruitment
     render 'recruitment'
   end
