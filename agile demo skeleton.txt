@@ -1,0 +1,19 @@
+Files we changed:
+app/controllers/static_pages_controller.rb |  3 +++
+app/views/layouts/_navbar.html.erb         |  3 +++
+app/views/static_pages/calendar.html.erb   | 16 ++++++++++++++++
+config/routes.rb                           |  1 +
+
+In routes.rb, add:
+get '/calendar', to: "static_pages#calendar"
+
+In static_pages_controller.rb, add:
+  def calendar
+  end
+
+Create calendar.html.erb and add stuff to it.
+
+In _navbar.html.erb, add:
+<li class="nav-item">
+    <%= link_to_nav_item "Calendar", calendar_path, :class => "nav-link" %>
+</li>
