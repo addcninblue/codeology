@@ -2,7 +2,9 @@
 
 This is the website for the Codeology club at Berkeley
 
-Before getting started, make sure you're running the latest MacOS, installed all the security updates, and installed all XCode developer tools.
+Before getting started, make sure you're running the latest MacOS, installed all the security updates, and installed all XCode developer tools (open XCode-->Preferences-->Locations-->Command Line Tools, select XCode; and then `xcode-select --install` in Terminal).
+
+If you do not have Ruby on Rails on your system, please follow the instructions here: http://www.installrails.com
 
 Check out this repository to your local workspace ([GitHub for Mac](http://mac.github.com/) is recommended).
 
