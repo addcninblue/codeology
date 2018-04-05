@@ -5,7 +5,7 @@ describe StaticPagesController do
 
   describe "welcome page" do
     it "should render the home page" do
-      get :root
+      get :home
       expect(response).to render_template :home
     end
   end

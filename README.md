@@ -30,3 +30,29 @@ bundle install
 ```
 
 If you have trouble installing libv8 on El Capitan, see [here](http://stackoverflow.com/questions/19577759/installing-libv8-gem-on-os-x-10-9).
+
+For the purposes of demonstration, please checkout specifically the `agile_demo` branch via 
+```
+git fetch
+git checkout -b agile_demo origin/agile_demo
+```
+
+To get things to work, you need to initialize and run a local PG server. You can do that through the following code:
+```
+pg_ctl -D /usr/local/var/postgres -l logfile start
+```
+
+If the above doesn't work, you can reset a PG server instance via:
+```
+rm -rf /usr/local/var/postgres // deletes your current PG instance 
+initdb /usr/local/var/postgres -E utf8 // reinstantiates PG instance
+```
+and then try starting the server again.
+
+Useful Links for understanding Cucumber:
+https://cucumber.io/docs/reference
+http://www.rubydoc.info/github/jnicklas/capybara
+
+Useful Links for understanding RSpec:
+http://rspec.info/documentation/3.7/rspec-rails/
+https://relishapp.com/rspec
