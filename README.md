@@ -25,7 +25,7 @@ because it's a dependency for the `mysql2` gem:
 brew install mysql
 ```
 
-Finally, install the gems necessary for development, testing, and deployment:
+Finally, install the gems necessary for development, testing, and deployment ([install bundler](https://bundler.io) if you do not have it):
 
 ```
 bundle install
