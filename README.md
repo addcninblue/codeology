@@ -44,6 +44,12 @@ To get things to work, you need to initialize and run a local PG server. You can
 pg_ctl -D /usr/local/var/postgres -l logfile start
 ```
 
+You also need to run
+```
+rake db:setup
+```
+to initialize the data for the website.
+
 If the above doesn't work, you can reset a PG server instance via:
 ```
 initdb /usr/local/var/postgres -E utf8
