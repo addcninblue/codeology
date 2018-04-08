@@ -46,8 +46,7 @@ pg_ctl -D /usr/local/var/postgres -l logfile start
 
 If the above doesn't work, you can reset a PG server instance via:
 ```
-rm -rf /usr/local/var/postgres // deletes your current PG instance 
-initdb /usr/local/var/postgres -E utf8 // reinstantiates PG instance
+initdb /usr/local/var/postgres -E utf8
 ```
 and then try starting the server again.
 
