@@ -14,6 +14,7 @@ manage your Ruby versions and gems:
 
 ```
 rbenv install 2.2.2
+rbenv local 2.2.2
 gem install bundler
 ```
 
@@ -30,6 +31,8 @@ Finally, install the gems necessary for development, testing, and deployment ([i
 ```
 bundle install
 ```
+
+(if you run into an error with incompatible Ruby Versions, check here https://stackoverflow.com/questions/37619964/bundle-install-not-using-rbenv-local-ruby-version and check if you need to update your ~/.bash_profile)
 
 If you have trouble installing libv8 on El Capitan, see [here](http://stackoverflow.com/questions/19577759/installing-libv8-gem-on-os-x-10-9).
 
